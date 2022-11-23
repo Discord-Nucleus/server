@@ -1,0 +1,33 @@
+{
+  "author": {
+    "name": "Nucleus",
+    "url": "https://github.com/Discord-Nucleus"
+  },
+  "bugs": {
+    "url": "https://github.com/Discord-Nucleus/server/issues"
+  },
+  "dependencies": {},
+  "description": "",
+  "devDependencies": {
+    "@discord-nucleus/configurations": "^1.0.3",
+    "@types/node": "^16",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "homepage": "https://github.com/Discord-Nucleus/server#readme",
+  "license": "MIT",
+  "name": "@discord-nucleus/server",
+  "prettier": "@discord-nucleus/configurations/prettier.config",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Discord-Nucleus/server.git"
+  },
+  "version": "0.0.1"
+}
