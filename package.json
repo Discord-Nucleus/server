@@ -13,7 +13,7 @@
     "raw-body": "^2.5.1",
     "type-is": "^1.6.18"
   },
-  "description": "",
+  "description": "Customizable express-based server",
   "devDependencies": {
     "@discord-nucleus/configurations": "^1.0.3",
     "@types/body-parser": "^1.19.2",
@@ -51,5 +51,5 @@
     "clean": "tsc --build --clean"
   },
   "types": "./build/index.d.ts",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
