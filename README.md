@@ -77,7 +77,7 @@
 > const server = new MyServer(config);
 >
 > // Load routes from `./routes` directory
-> server.registerRoutes(path.join(__dirname, "routes"));
+> server.registerRoutes(join(__dirname, "routes"));
 >
 > // Log when server gets ready
 > server.on("ready", () => console.log("Ready!"));
@@ -148,6 +148,6 @@
 >             └── index.ts
 > ```
 >
->> **Note**
->>
->> You can add brackets to route path to create a dynamic route
+> > **Note**
+> >
+> > You can add brackets to route path to create a dynamic route

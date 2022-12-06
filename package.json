@@ -28,20 +28,28 @@
     "node": ">=16.0.0"
   },
   "homepage": "https://github.com/Discord-Nucleus/server#readme",
+  "keywords": [
+    "typescript",
+    "server",
+    "express",
+    "router"
+  ],
   "license": "MIT",
+  "main": "./build/index.js",
   "name": "@discord-nucleus/server",
   "prettier": "@discord-nucleus/configurations/prettier.config",
-  "private": true,
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "build": "tsc --build",
-    "clean": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Discord-Nucleus/server.git"
   },
-  "version": "0.0.1"
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "types": "./build/index.d.ts",
+  "version": "1.0.0"
 }
