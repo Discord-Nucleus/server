@@ -52,11 +52,11 @@
 > // You can customize server by extending him
 > class MyServer extends Server {
 >   // Error handler
->   protected override errorHandler(error: Error, request: Request, response: Response, next: > NextFunction): void {
+>   protected override errorHandler(error: Error, request: Request, response: Response, next: NextFunction): void {
 >     response.status(500).send("Oops... Something went wrong!");
 >   }
 >   // Not found handler
->   protected override notFoundHandler(request: Request, response: Response, next: NextFunction): > void {
+>   protected override notFoundHandler(request: Request, response: Response, next: NextFunction): void {
 >     response.status(404).send("The requested URL was not found on this server!");
 >   }
 >   // Called after server instance initialization
@@ -95,7 +95,7 @@
 > import type { Request, Response, NextFucnction } from "express";
 >
 > // Dummy showcase-only middleware
-> const dummyMiddleware = (text: string) => (request: Request, response: Response, next: > NextFunction) => {
+> const dummyMiddleware = (text: string) => (request: Request, response: Response, next: NextFunction) => {
 >   console.log(text);
 >   next();
 > };
@@ -113,7 +113,7 @@
 >   // Another way to add middlewares
 >   @middleware(dummyMiddleware("hello"), dummyMiddleware("world"))
 >   // Method handler
->   protected override async post(request: Request, response: Response, next: NextFunction): > Promise<void> {
+>   protected override async post(request: Request, response: Response, next: NextFunction): Promise<void> {
 >     response.send("Hello World!");
 >   }
 > }
