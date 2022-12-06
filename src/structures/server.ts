@@ -56,6 +56,8 @@ export class Server extends (EventEmitter as new () => TypedEmitter<ServerEvents
 
       this.application.use(path, router);
     }
+    this.application.use(this.errorHandler);
+    this.application.use("*", this.errorHandler);
   }
 
   protected initialize(): void {
@@ -72,6 +74,13 @@ export class Server extends (EventEmitter as new () => TypedEmitter<ServerEvents
     response.status(500).json({
       code: 500,
       message: "Internal Server Error",
+    });
+  }
+
+  protected notFoundHandler(request: Request, response: Response, next: NextFunction): void {
+    response.status(404).json({
+      code: 404,
+      message: "Not Found",
     });
   }
 }

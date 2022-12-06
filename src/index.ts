@@ -3,4 +3,4 @@ export * from "./decorators";
 export * from "./middlewares";
 export * from "./structures";
 export * from "./utilities";
-export * from "./types"
+export * from "./types";
