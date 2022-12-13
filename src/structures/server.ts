@@ -7,7 +7,7 @@ import TypedEmitter from "typed-emitter";
 import { RegExp } from "../constants";
 import { bson } from "../middlewares";
 import type { ServerEvents, ServerOptions } from "../types";
-import { walk } from "../utilities";
+import { walk } from "@discord-nucleus/utilities";
 import type { Route } from "./router";
 
 export class Server extends (EventEmitter as new () => TypedEmitter<ServerEvents>) {
