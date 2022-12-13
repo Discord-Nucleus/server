@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
-  <img width=200px height=200px src="assets/icon.svg" alt="Project logo"></a>
+  <img width=200px height=200px src="https://raw.githubusercontent.com/Discord-Nucleus/assets/main/branding/server/icon.svg" alt="Project logo"></a>
 </p>
 
 <h3 align="center">@discord-nucleus/server</h3>
@@ -27,13 +27,13 @@
 
 ## 📦️ Installing <a name = "installing"></a>
 
-> ### <img align="center"  width=20px height=20px src="assets/npm.svg" /> NPM
+> ### <img align="center"  width=20px height=20px src="https://raw.githubusercontent.com/Discord-Nucleus/assets/main/icons/npm.svg" /> NPM
 >
 > ```sh
 > npm install @discord-nucleus/server
 > ```
 
-> ### <img align="center"  width=20px height=20px src="assets/yarn.svg" /> Yarn
+> ### <img align="center"  width=20px height=20px src="https://raw.githubusercontent.com/Discord-Nucleus/assets/main/icons/yarn.svg" /> Yarn
 >
 > ```sh
 > yarn add @discord-nucleus/server
