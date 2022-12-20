@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@discord-nucleus/configurations/-/configurations-1.0.3.tgz#1b078c056aecb698b854fb0cb66f5eee02d57bef"
   integrity sha512-lFIUew61ywMoYexlIWuoMjf3Dh/+I/DRO0DhAKDkeAIAQHl+qWGLcEMG6TX33OyVXNjZTCmNTkJhEDRLI9lDyQ==
 
-"@discord-nucleus/utilities@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@discord-nucleus/utilities/-/utilities-1.0.0.tgz#d8d4d6be5fa0d27a6bac3a81257eca8bc6646d1a"
-  integrity sha512-uAcPLw8kc5/LsooDgeRh+6k2lo7G+3JEgK1c4+NWqCmuqHvc0tcKpMHscSDI5jN3eicEYZMyg9smqrgkgfYPSQ==
+"@discord-nucleus/utilities@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@discord-nucleus/utilities/-/utilities-1.0.1.tgz#627477bda03f8fc448191c450de3296aff5a1202"
+  integrity sha512-Uc8p9FF3zlOXLI2eKIyy4MjYvl3+Lp//H0gxUzKxsAnHkpFn7O27wfwiKRf1a1MURoi6CUt2WeD5D8RuWhC3Cg==
 
 "@types/body-parser@*", "@types/body-parser@^1.19.2":
   version "1.19.2"
