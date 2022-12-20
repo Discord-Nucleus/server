@@ -1,13 +1,12 @@
+import { Regex, walk } from "@discord-nucleus/utilities";
 import { json } from "body-parser";
 import EventEmitter from "events";
 import express, { Application, NextFunction, Request, Response } from "express";
 import Http from "http";
 import { relative } from "path";
 import TypedEmitter from "typed-emitter";
-import { RegExp } from "../constants";
 import { bson } from "../middlewares";
 import type { ServerEvents, ServerOptions } from "../types";
-import { walk } from "@discord-nucleus/utilities";
 import type { Route } from "./router";
 
 export class Server extends (EventEmitter as new () => TypedEmitter<ServerEvents>) {
@@ -41,15 +40,15 @@ export class Server extends (EventEmitter as new () => TypedEmitter<ServerEvents
   }
 
   public registerRoutes(root: string): void {
-    const matches = walk(root, RegExp.NodeModule).sort((a, b) => (RegExp.Bracket.test(a) ? 1 : -1));
+    const matches = walk(root, Regex.Global.Importable).sort((a, b) => (Regex.Route.Params.test(a) ? 1 : -1));
 
     for (const file of matches) {
       const path =
         "/" +
         relative(root, file)
           .replaceAll("\\", "/")
-          .replaceAll(RegExp.Bracket, (_substring, match) => `:${match}`)
-          .replace(RegExp.RouteExtra, "");
+          .replaceAll(Regex.Route.Params, (_substring, match) => `:${match}`)
+          .replace(Regex.Route.Extra, "");
 
       const routeModule: { new (): Route } = require(file).default;
       const { router } = new routeModule();
